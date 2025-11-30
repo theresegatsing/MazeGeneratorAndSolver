@@ -42,4 +42,12 @@ public class Maze {
 	public char[][] getGrid(){
 		return this.grid;
 	}
+	
+	public void print() {
+		for (char[] row: grid) {
+			System.out.println((new String(row)));
+		}
+	}
+	
+	
 }
