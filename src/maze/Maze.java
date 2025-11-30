@@ -11,6 +11,7 @@ public class Maze {
 	private int startCol;
 	private int endRow;
 	private int endCol;
+	private char[][] grid;
 	
 	public Maze(int length, int width) {
 		this.length = length;
