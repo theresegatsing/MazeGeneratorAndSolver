@@ -60,6 +60,16 @@ public class MazeGenerator {
 	            }
 	        }
 	    }
+	 
+	 
+	 private static void shuffle(int[][] dirs) {
+	        for (int i = 0; i < dirs.length; i++) {
+	            int j = rand.nextInt(dirs.length);
+	            int[] tmp = dirs[i];
+	            dirs[i] = dirs[j];
+	            dirs[j] = tmp;
+	        }
+	    }
 	
 
 }
