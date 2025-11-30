@@ -13,9 +13,12 @@ public class Maze {
 	private int endCol;
 	private char[][] grid;
 	
-	public Maze(int length, int width) {
-		this.length = length;
-		this.width = width;
+	public Maze(char[][] grid, int startRow, int startCol, int endRow, int endCol) {
+		this.startRow = startRow;
+		this.startCol = startCol;
+		this.endCol = endCol;
+		this.endRow = endRow;
+		this.grid = grid;
 		
 	}
 	
