@@ -40,6 +40,26 @@ public class MazeGenerator {
 
 	        return new Maze(grid, startRow, startCol, endRow, endCol);
 	    }
+	 
+	 
+	 private static void carve(char[][] grid, int r, int c) {
+	        // Typical recursive backtracking
+	        // Randomly shuffle directions: up, down, left, right
+	        int[][] dirs = { { -2, 0 }, { 2, 0 }, { 0, -2 }, { 0, 2 } };
+	        shuffle(dirs);
+
+	        for (int[] d : dirs) {
+	            int nr = r + d[0];
+	            int nc = c + d[1];
+
+	            if (isInBounds(grid, nr, nc) && grid[nr][nc] == '#') {
+	                // Knock down the wall between (r,c) and (nr,nc)
+	                grid[r + d[0] / 2][c + d[1] / 2] = ' ';
+	                grid[nr][nc] = ' ';
+	                carve(grid, nr, nc);
+	            }
+	        }
+	    }
 	
 
 }
