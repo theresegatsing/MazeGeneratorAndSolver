@@ -34,4 +34,8 @@ public class Maze {
 	public int getEndCol() {
 		return this.endCol;
 	}
+	
+	public int getEndRow() {
+		return this.endRow;
+	}
 }
