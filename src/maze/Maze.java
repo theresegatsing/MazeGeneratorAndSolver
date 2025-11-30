@@ -27,4 +27,7 @@ public class Maze {
 		return this.startRow;
 	}
 	
+	public int getStartCol() {
+		return this.startCol;
+	}
 }
