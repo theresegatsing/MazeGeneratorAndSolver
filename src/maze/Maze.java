@@ -23,11 +23,8 @@ public class Maze {
 	}
 	
 	
-	public int getLength() {
-		return this.length;
+	public int getStartRow() {
+		return this.startRow;
 	}
 	
-	public int getWidth() {
-		return this.width;
-	}
 }
