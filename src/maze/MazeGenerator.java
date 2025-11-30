@@ -70,6 +70,10 @@ public class MazeGenerator {
 	            dirs[j] = tmp;
 	        }
 	    }
+	 
+	 private static boolean isInBounds(char[][] grid, int r, int c) {
+	        return r > 0 && r < grid.length - 1 && c > 0 && c < grid[0].length - 1;
+	    }
 	
 
 }
