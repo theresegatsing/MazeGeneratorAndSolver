@@ -30,4 +30,8 @@ public class Maze {
 	public int getStartCol() {
 		return this.startCol;
 	}
+	
+	public int getEndCol() {
+		return this.endCol;
+	}
 }
