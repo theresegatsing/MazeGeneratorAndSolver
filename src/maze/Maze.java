@@ -7,8 +7,10 @@ package maze;
  */
 public class Maze {
 	
-	private int length;
-	private int width;
+	private int startRow;
+	private int startCol;
+	private int endRow;
+	private int endCol;
 	
 	public Maze(int length, int width) {
 		this.length = length;
