@@ -38,4 +38,8 @@ public class Maze {
 	public int getEndRow() {
 		return this.endRow;
 	}
+	
+	public char[][] getGrid(){
+		return this.grid;
+	}
 }
