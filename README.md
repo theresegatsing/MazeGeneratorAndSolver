@@ -1,4 +1,4 @@
-# Maze Generator and Solver (Java)
+# Maze Generator and Solver 
 
 This project generates a random maze of a user-chosen size and then solves it using depth-first search (DFS). The solution path from the start `S` to the exit `E` is marked directly on the maze.
 
