@@ -45,5 +45,13 @@ public class MazeSolver {
         }
         return false; // no path from here
     }
+    
+    private static boolean isValidMove(char[][] grid, boolean[][] visited, int r, int c) {
+        if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length) return false;
+        if (visited[r][c]) return false;
+
+        char cell = grid[r][c];
+        return cell == ' ' || cell == 'E';
+    }
 }
 
